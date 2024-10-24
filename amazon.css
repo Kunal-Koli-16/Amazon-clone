@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border:border-box; 
+}
+.box:hover{
+    border: 1px solid white;
+}
+.navbar{
+    background-color:#0f1111;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+
+}
+.logoimg{
+    height: 50px;
+    width: 113px;
+    margin: 1px;
+    padding:1px 8px 0px 6px;
+    border: 1px solid #0f1111;
+}
+.locicon{
+    color: white;
+    width: 15px;
+    height: 18px;
+    margin: 16px 0 0 0;
+  
+
+}
+.location{
+    color: white;
+    padding: 1px;
+    border: 1px solid #0f1111;
+}
+/* search bar */
+.searchbar{
+    width: 800px;
+    height: 20px;
+    padding: 7px 10px 10px 0;
+    font-size:15px;
+    font-weight: 500;
+    
+}
+/* selection box all */
+#A{
+    margin-left: 15px;
+    background-color: #c7c5c5;
+    width: 50px;
+    height: 40px;
+    border:none;
+    color: gray;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+#A:hover{
+    background-color:#b0afaf ;
+    color: black;
+}
+option{
+    background-color: white;
+    color: black;
+}
+/* search button */
+#search{
+    height: 40px;
+    width: 50px;
+    background-color: #FFD35A;
+    border: none;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+#search:hover{
+    background-color: #f9bf1f;
+}
+/* language selection */
+#lang{
+    height: 40px;
+    width: 40px;
+    background-color: #0f1111;
+    color: white;  
+    border: none;
+    margin-top: 10px;
+}
+.lan{
+    color: black;
+}
+.langimg{
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
+    margin: 10px 0 0 25px;
+}
+/* sign in and cart parts */
+.sign{
+    color: white;
+    margin: 5px 0 0 20px;
+    border: 1px solid #0f1111;
+}
+.return{
+    color: white;
+    margin: 5px 0 0 20px;
+    border: 1px solid #0f1111;
+}
+/* cart */
+.cart{
+    color: white;
+    font-size: 30px;
+    margin: 5px 0 0 20px;
+    border: 1px solid #0f1111;
+
+}
+#cart{
+    color: white;
+    margin: 5px 0 0 0;
+}
+/* navbar secction end here */
+.subnav{
+    background-color: #232f3e;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    
+}
+.ic{
+    font-size:20px;
+
+}
+.item{
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: medium;
+}
+/* sub navbar also end here  */
+.main{
+    background-image: url(amazonbg.jpg);
+    background-size:cover;
+    height: 100vh;
+    width: 100%;
+    animation: back 20s steps(1) 0s infinite normal;
+    /* animation: back 20s steps(1) 0s infinite normal; */
+    
+}
+@keyframes back{
+    20%{
+        background-image: url(kitchen.jpg);
+    }
+    40%{
+        background-image: url(toy.jpg);
+    }
+    60%{
+        background-image: url(book.jpg);
+    }
+    80%{
+        background-image: url(beauty.jpg);
+    }
+}
+/* image animation ends here */
+/* product boxes start from here >> */
+
+.firstrow,.secondrow{
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+        /* first row of boxes */
+}
+.productbox{
+    height: 400px;
+    width: 350px;
+    background-color: white;
+    margin-top:350px;
+    border: 1px solid #F0EBE3;
+    /* box properties */
+}
+.heading{
+    margin: 20px 0 0 15px;
+    /* heading properties of box */
+}
+.a_tags{
+    /* anchor tags in boxes */
+margin: 0 0 0 20px;
+text-decoration: none;
+}
+.a_tags:hover{
+    color: red;
+}
+
+/* making of first row boxes */
+/* first box start */
+.Ga{
+    height: 120px;
+    width: 140px;
+}
+.firstimgs,.secondimgs{
+    margin:10px 0 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    cursor: pointer;
+    /* gaming box images to setting up the images  */
+ 
+}
+/* first box end */
+/* second box start */
+.pc{
+    height: 280px;
+    width: 300px;
+    padding: 15px 0 0 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    /* pc box image*/
+}
+/* second box end */
+
+/* first row is completed here now we start second row  */
+.productbox2{
+    height: 400px;
+    width: 350px;
+    background-color: white;
+    margin:45px 0 -5px 0;
+    border: 1px solid  #F0EBE3;
+}
+
+.background_color{
+    background-color: #eeeeee;
+    height: 100%;
+    width: 100%;
+    /* background color for remaining document */
+}
+
+/* third row css start  */
+.thirdrow{
+    background-color: white;
+    height: 300px;
+    width: 98%;
+    margin:30px 0 -20px 14px;
+    border: 1px solid  #F0EBE3;
+}
+.rowimagesdiv{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 230px;
+    margin:8px 0 0 0;
+    cursor: pointer;
+    
+}
+.rowimages{
+    height:230px;
+    width: 200px;
+}
+/* third row end here */
+
+/* last part of site*/
+.lastdiv{
+    margin:50px 0 0 0;
+    background-color:white;
+    width: 99.90%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1px;
+    
+
+}
+.signin{
+    border: 1px solid gray;
+    width: 99.90%;
+    height: 100px;
+    margin:35px 0 25px 0 ;
+    padding-top: 10px;
+    text-align: center;
+}
+.sign_in{
+    background-color: #ffbc02e4;
+    height: 30px;
+    font-weight: 600;
+    border: none;
+    width: 225px;
+    border-radius: 5px;
+    margin: 3px 0 3px 0;
+    cursor: pointer;
+}
+.sign_in:hover{
+    background-color: #ffe602;
+}
+.para{
+    font-size: small;
+}
+.backbutton{
+    background-color: #232f3e;
+    width: 100%;
+    height: 40px;
+    padding-top: 20px;
+}
+.backbutton:hover{
+    background-color: #324256;
+
+}
+#backbutton{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    
+}
+
+
